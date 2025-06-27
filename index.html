@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Password Generator</title>
+        <link rel="icon" href="images/Favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/Favicon.png" alt="Logo" height="50" width="50">
+            <h2>Password Generator</h2>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="title-container">
+                    <h1 class="title">Generate a <span>random password</span></h1>
+                    <h3 class="title">never use an insecure password again</h2>
+                </div>
+                <div id="customization-container">
+                    <select name="password length" id="pswrdL">
+                        <option value="8 Characters">8 Characters</option>
+                        <option value="10 Characters">10 Characters</option>
+                        <option value="14 Characters">14 Characters</option>
+                        <option value="16 Characters">16 Characters</option>
+                    </select>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numbers</label>
+                    <input type="checkbox" id="Symbols">
+                    <label for="Symbols">Symbols</label>
+                </div>
+                <Button>Generate Passwords</Button>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

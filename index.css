@@ -1,0 +1,61 @@
+body {
+    background-color: #1F2937;
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+    color: #F9FAFB;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    border-bottom: 1px solid rgba(107, 114, 128, .2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 600px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    height: 30px;
+    margin: 18px 0 21px 0;
+    text-shadow: 0 0 20px rgba(249, 250, 251, .2);
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(249, 250, 251, .6);
+}
+
+span {
+    color: #10B981;
+}
+
+#logo {
+    margin: 7px 0 13px 0;
+}
+
+
+
+#main-container {
+    margin-left: 40px;
+}
+
+#title-container {
+    margin-block: 40px;
+}
+
+#customization-container {
+    margin-block: 50px;
+}
+
+.title {
+    margin: 0;
+}
