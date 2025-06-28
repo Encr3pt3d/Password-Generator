@@ -15,7 +15,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    height: 600px;
+    height: 340px;
+    border-bottom: 1px solid rgba(107, 114, 128, .2);
+}
+
+footer {
+    display: flex;
 }
 
 h1 {
@@ -36,13 +41,64 @@ h3 {
 
 span {
     color: #10B981;
+    text-shadow: 0px 0px 30px rgba(16, 185, 129, .3);
 }
 
 #logo {
     margin: 7px 0 13px 0;
 }
 
+select {
+    height: 30px;
+    width: 110px;
+    padding-left: 10px;
+    border: 1px solid rgba(249, 250, 251, .2);
+    border-radius: 10px;
+    font-family: "Source Sans 3", sans-serif;
+    margin-right: 20px;
+}
 
+::picker(select) {
+  border: none;
+  margin-block-start: 1rem;
+}
+
+input {
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 12pt;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 11pt;
+    background-color: #10B981;
+    color: #F9FAFB;
+    box-shadow: 0px 0px 30px rgba(16, 185, 129, .3);
+    position: fixed;
+    transition: all 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+label {
+    margin-right: 20px;
+}
 
 #main-container {
     margin-left: 40px;
@@ -58,4 +114,33 @@ span {
 
 .title {
     margin: 0;
+}
+
+.password {
+    height: 30px;
+    width: 300px;
+    background-color: #273549;
+    border: 1px solid #273549;
+    border-radius: 50px;
+    margin: 20px 10px;
+    color: #10B981;
+    text-align: center;
+    justify-items: center;
+    font-size: 15pt;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(169, 170, 168, 0.521);
+}
+
+.password:active {
+    transform: scale(1);
+    box-shadow: 0px 0px 30px rgba(169, 170, 168, 0.8);
+}
+
+#password1 {
+    margin-left: 35px;
 }
