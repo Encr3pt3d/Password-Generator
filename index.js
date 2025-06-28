@@ -8,17 +8,18 @@ const password2 = document.getElementById("password2");
 const password3 = document.getElementById("password3");
 
 let style = AlphNumS;
-let passwordLength = document.getElementById("pswrdL");
+const passwordLength = document.getElementById("pswrdL");
 let x = passwordLength.value;
 let G = 91
 
 let pass1 = [];
 let pass2 = [];
 let pass3 = [];
+
 //pulls value and sets it from DOM
 function findValue() {
-    let Num = document.getElementById("numbers").checked;
-    let Sym = document.getElementById("Symbols").checked;
+    const Num = document.getElementById("numbers").checked;
+    const Sym = document.getElementById("Symbols").checked;
     x = passwordLength.value;
     if (Num === true && Sym === true) {
         style = AlphNumS
@@ -35,6 +36,7 @@ function findValue() {
     }
     return x
 }
+
 //creates password by using random numbers
 function createRandomPassword(x, style, setNum, pass) {
     for (i = 0; i < x; i++ ) {
@@ -56,6 +58,7 @@ function generate() {
     password3.textContent = createRandomPassword(x, style, G, pass3)
 }
 
+//copy to clipboard function
 function copy(pass) {
     if (pass.textContent === "") {
 

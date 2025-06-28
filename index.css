@@ -84,7 +84,6 @@ button {
     background-color: #10B981;
     color: #F9FAFB;
     box-shadow: 0px 0px 30px rgba(16, 185, 129, .3);
-    position: fixed;
     transition: all 0.4s;
 }
 
